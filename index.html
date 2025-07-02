@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcards Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Flip & Learn - Flashcards Quiz App</h1>
+        <label class="theme-toggle">
+            <input type="checkbox" id="theme-switch">
+            <span>Light / Dark</span>
+        </label>
+    </header>
+
+    <main id="quiz-container">
+        <!-- Flip Card Container -->
+      <div class="card" id="flashcard">
+      <div class="card-inner">
+      <div class="card-front" id="question-text">Question will go here</div>
+      <div class="card-back" id="answer-text">Answer will flip here</div>
+      </div>
+    </div>
+
+  <!-- Multiple choice options -->
+      <div id="choices-container"></div>
+
+      <p id="feedback"></p>
+      <button id="next-btn" disabled>Next</button>
+  </main>
+
+    <section id="summary-section" hidden>
+        <h2>Quiz Complete!</h2>
+        <p id="score-text"></p>
+        <button id="restart-btn">Restart Quiz</button>
+  </section>
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
