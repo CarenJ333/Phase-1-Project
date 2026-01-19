@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const feedback = document.getElementById("feedback");
   const summarySection = document.getElementById("summary-section");
   const scoreText = document.getElementById("score-text");
-  const backBtn = document.createElement("button"); // We'll add this dynamically
+  const backBtn = document.createElement("button");
   
   let currentQuestionIndex = 0;
   let score = 0;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     summarySection.hidden = true;
 
     // Fetch ALL flashcards, then filter by topic
-    fetch("http://localhost:3000/flashcards")
+    fetch("data/db.json")
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
         return res.json();
