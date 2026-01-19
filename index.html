@@ -12,32 +12,189 @@
         <label class="theme-toggle">
             <input type="checkbox" id="theme-switch">
             <span>Light / Dark</span>
-        </label>
+        </label>  
     </header>
-
-    <main id="quiz-container">
-        <!-- Flip Card Container -->
-      <div class="card" id="flashcard">
-      <div class="card-inner">
-      <div class="card-front" id="question-text">Question will go here</div>
-      <div class="card-back" id="answer-text">Answer will flip here</div>
+<section id="topic-section">
+  <h2>Choose a Topic</h2>
+  <div class="topics-grid">
+    <!-- HTML Topics -->
+    <div class="topic-category">
+      <h3 class="category-title">HTML</h3>
+      <div class="category-topics">
+        <div class="topic-card" data-topic="html-forms">
+          <h4>HTML Forms</h4>
+          <p>Input elements & validation</p>
+          <span class="count">5 questions</span>
+        </div>
+        <div class="topic-card" data-topic="html-inline">
+          <h4>HTML Inline Elements</h4>
+          <p>Inline vs block elements</p>
+          <span class="count">5 questions</span>
+        </div>
+        <div class="topic-card" data-topic="html-semantic">
+          <h4>Semantic HTML</h4>
+          <p>Meaningful HTML tags</p>
+          <span class="count">5 questions</span>
+        </div>
       </div>
     </div>
 
+    <!-- CSS Topics -->
+    <div class="topic-category">
+      <h3 class="category-title">CSS</h3>
+      <div class="category-topics">
+        <div class="topic-card" data-topic="css-selectors">
+          <h4>CSS Selectors</h4>
+          <p>Combinators & specificity</p>
+          <span class="count">5 questions</span>
+        </div>
+        <div class="topic-card" data-topic="css-fonts">
+          <h4>CSS Fonts & Typography</h4>
+          <p>Font properties & styling</p>
+          <span class="count">5 questions</span>
+        </div>
+        <div class="topic-card" data-topic="css-text">
+          <h4>CSS Text Formatting</h4>
+          <p>Text alignment & decoration</p>
+          <span class="count">5 questions</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Topics -->
+    <div class="topic-category">
+      <h3 class="category-title">JavaScript</h3>
+      <div class="category-topics">
+        <div class="topic-card" data-topic="js-control-flow">
+          <h4>JS Control Flow</h4>
+          <p>Loops & conditionals</p>
+          <span class="count">5 questions</span>
+        </div>
+        <div class="topic-card" data-topic="js-functions">
+          <h4>JS Functions</h4>
+          <p>Function types & scope</p>
+          <span class="count">5 questions</span>
+        </div>
+        <div class="topic-card" data-topic="js-objects">
+          <h4>JS Objects</h4>
+          <p>Objects & methods</p>
+          <span class="count">5 questions</span>
+        </div>
+        <div class="topic-card" data-topic="js-types">
+          <h4>JS Types</h4>
+          <p>Data types & type coercion</p>
+          <span class="count">5 questions</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <main id="quiz-container" hidden>
+        <!-- Flip Card Container -->
+<div class="card" id="flashcard">
+  <div class="card-inner">
+    <div class="card-front">
+      <div class="card-label">Question</div>
+      <div class="card-counter" id="question-counter">1/10</div>
+      <div class="card-front-content">
+        <div id="question-text">Question will go here</div>
+      </div>
+    </div>
+    <div class="card-back">
+      <div class="card-label">Answer</div>
+      <div class="card-counter" id="answer-counter">1/10</div>
+      <div class="card-back-content">
+        <div id="answer-text">Answer will appear here</div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Multiple choice options -->
       <div id="choices-container"></div>
-
       <p id="feedback"></p>
       <button id="next-btn" disabled>Next</button>
   </main>
 
-    <section id="summary-section" hidden>
-        <h2>Quiz Complete!</h2>
-        <p id="score-text"></p>
-        <button id="restart-btn">Restart Quiz</button>
-  </section>
-
-
+<section id="summary-section" hidden>
+  <div class="summary-container">
+    <!-- Celebration Icon -->
+    <div class="celebration-icon">🎉</div>
+    
+    <h2>Quiz Complete!</h2>
+    
+    <!-- Score Circle -->
+    <div class="score-circle">
+      <svg class="progress-ring" width="200" height="200">
+        <circle class="progress-ring-bg" cx="100" cy="100" r="90" stroke-width="10"/>
+        <circle class="progress-ring-circle" cx="100" cy="100" r="90" stroke-width="10"
+                stroke-dasharray="565.48" stroke-dashoffset="0"/>
+      </svg>
+      <div class="score-percentage">
+        <span id="percentage-text">0%</span>
+        <span class="score-label">Score</span>
+      </div>
+    </div>
+    
+    <!-- Score Details -->
+    <div class="score-details">
+      <div class="score-stat">
+        <span class="stat-label">Correct</span>
+        <span class="stat-value correct-stat" id="correct-count">0</span>
+      </div>
+      <div class="score-stat">
+        <span class="stat-label">Total</span>
+        <span class="stat-value total-stat" id="total-count">0</span>
+      </div>
+      <div class="score-stat">
+        <span class="stat-label">Time</span>
+        <span class="stat-value time-stat" id="time-taken">--:--</span>
+      </div>
+    </div>
+    
+    <!-- Performance Message -->
+    <div class="performance-message">
+      <h3 id="performance-title">Great Effort!</h3>
+      <p id="performance-text">You're making good progress!</p>
+    </div>
+    
+    <!-- Action Buttons -->
+    <div class="summary-actions">
+      <button id="restart-btn" class="restart-btn">
+        <span class="btn-icon">↻</span>
+        Restart Quiz
+      </button>
+      <button id="topics-btn" class="topics-btn">
+        <span class="btn-icon">←</span>
+        Back to Topics
+      </button>
+      <button id="share-btn" class="share-btn">
+        <span class="btn-icon">📤</span>
+        Share Score
+      </button>
+    </div>
+    
+    <!-- Additional Stats (Optional) -->
+    <div class="additional-stats">
+      <div class="stat-card">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-info">
+          <div class="stat-number" id="streak-count">0</div>
+          <div class="stat-desc">Correct Streak</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⏱️</div>
+        <div class="stat-info">
+          <div class="stat-number" id="avg-time">0s</div>
+          <div class="stat-desc">Avg/Question</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<canvas id="confetti-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;"></canvas>
 
   <script src="index.js"></script>
 </body>

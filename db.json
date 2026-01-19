@@ -2,68 +2,621 @@
   "flashcards": [
     {
       "id": 1,
-      "question": "Which keyword is used to declare a variable in JavaScript?",
-      "choices": ["var", "int", "let", "string"],
-      "correctAnswer": "let"
+      "topic": "html-forms",
+      "question": "Which attribute makes an input field required?",
+      "correctAnswer": "required",
+      "choices": ["required", "mandatory", "necessary", "validate"]
     },
     {
       "id": 2,
-      "question": "What is the output of 'typeof null' in JavaScript?",
-      "choices": ["object", "null", "undefined", "boolean"],
-      "correctAnswer": "object"
+      "topic": "html-forms",
+      "question": "What is the correct input type for email validation?",
+      "correctAnswer": "type='email'",
+      "choices": ["type='email'", "type='mail'", "type='text' with email validation", "type='contact'"]
     },
     {
       "id": 3,
-      "question": "Which of the following is NOT a primitive data type in JavaScript?",
-      "choices": ["Number", "String", "Array", "Boolean"],
-      "correctAnswer": "Array"
+      "topic": "html-forms",
+      "question": "Which element creates a dropdown list?",
+      "correctAnswer": "<select>",
+      "choices": ["<select>", "<dropdown>", "<list>", "<optionlist>"]
     },
     {
       "id": 4,
-      "question": "What is the correct syntax to define a function in JavaScript?",
-      "choices": ["function = myFunc()", "def myFunc()", "function myFunc() {}", "func myFunc[]"],
-      "correctAnswer": "function myFunc() {}"
+      "topic": "html-forms",
+      "question": "What does the 'for' attribute do in a label?",
+      "correctAnswer": "Associates label with input id",
+      "choices": [
+        "Associates label with input id",
+        "Creates a loop",
+        "Specifies form action",
+        "Defines label format"
+      ]
     },
     {
       "id": 5,
-      "question": "Which symbol is used for single-line comments in JavaScript?",
-      "choices": ["<!-- -->", "#", "//", "**"],
-      "correctAnswer": "//"
+      "topic": "html-forms",
+      "question": "Which method sends form data in the URL?",
+      "correctAnswer": "GET",
+      "choices": ["GET", "POST", "PUT", "SEND"]
     },
+
     {
       "id": 6,
-      "question": "How do you write a conditional 'if' statement in JavaScript?",
-      "choices": [
-        "if i == 5 then",
-        "if (i == 5)",
-        "if i = 5",
-        "if i := 5"
-      ],
-      "correctAnswer": "if (i == 5)"
+      "topic": "html-inline",
+      "question": "Which is an inline element?",
+      "correctAnswer": "<span>",
+      "choices": ["<span>", "<div>", "<p>", "<section>"]
     },
     {
       "id": 7,
-      "question": "What is the index of the first element in a JavaScript array?",
-      "choices": ["1", "0", "-1", "undefined"],
-      "correctAnswer": "0"
+      "topic": "html-inline",
+      "question": "What does the <strong> element do?",
+      "correctAnswer": "Indicates strong importance",
+      "choices": [
+        "Indicates strong importance",
+        "Makes text bold visually",
+        "Increases font size",
+        "Adds emphasis with voice"
+      ]
     },
     {
       "id": 8,
-      "question": "Which method adds a new element to the end of an array?",
-      "choices": ["push()", "add()", "append()", "insert()"],
-      "correctAnswer": "push()"
+      "topic": "html-inline",
+      "question": "Which element creates a hyperlink?",
+      "correctAnswer": "<a>",
+      "choices": ["<a>", "<link>", "<href>", "<url>"]
     },
     {
       "id": 9,
-      "question": "Which of these is used to check equality and type in JavaScript?",
-      "choices": ["==", "===", "!=", "="],
-      "correctAnswer": "==="
+      "topic": "html-inline",
+      "question": "What is the difference between <b> and <strong>?",
+      "correctAnswer": "<strong> has semantic meaning",
+      "choices": [
+        "<strong> has semantic meaning",
+        "<b> is newer",
+        "No difference",
+        "<strong> works only in Chrome"
+      ]
     },
     {
       "id": 10,
-      "question": "Which built-in method combines the elements of an array into a string?",
-      "choices": ["join()", "concat()", "toString()", "combine()"],
-      "correctAnswer": "join()"
+      "topic": "html-inline",
+      "question": "Which element is NOT inline?",
+      "correctAnswer": "<div>",
+      "choices": ["<div>", "<a>", "<span>", "<em>"]
+    },
+
+    {
+      "id": 11,
+      "topic": "html-semantic",
+      "question": "Which element represents the main content?",
+      "correctAnswer": "<main>",
+      "choices": ["<main>", "<body>", "<content>", "<div id='main'>"]
+    },
+    {
+      "id": 12,
+      "topic": "html-semantic",
+      "question": "What is the purpose of <article>?",
+      "correctAnswer": "Self-contained composition",
+      "choices": [
+        "Self-contained composition",
+        "Article from newspaper",
+        "Any text content",
+        "External article link"
+      ]
+    },
+    {
+      "id": 13,
+      "topic": "html-semantic",
+      "question": "Which element defines navigation links?",
+      "correctAnswer": "<nav>",
+      "choices": ["<nav>", "<menu>", "<links>", "<navigation>"]
+    },
+    {
+      "id": 14,
+      "topic": "html-semantic",
+      "question": "What does <aside> represent?",
+      "correctAnswer": "Content tangentially related",
+      "choices": [
+        "Content tangentially related",
+        "Hidden content",
+        "Sidebar always",
+        "Footer content"
+      ]
+    },
+    {
+      "id": 15,
+      "topic": "html-semantic",
+      "question": "Which is NOT a semantic element?",
+      "correctAnswer": "<div>",
+      "choices": ["<div>", "<header>", "<footer>", "<section>"]
+    },
+
+    {
+      "id": 16,
+      "topic": "css-selectors",
+      "question": "What does 'div p' selector select?",
+      "correctAnswer": "All p inside div",
+      "choices": [
+        "All p inside div",
+        "Direct child p of div",
+        "Adjacent p after div",
+        "Div and p siblings"
+      ]
+    },
+    {
+      "id": 17,
+      "topic": "css-selectors",
+      "question": "Which selector has highest specificity?",
+      "correctAnswer": "#id",
+      "choices": ["#id", ".class", "element", "inline style"]
+    },
+    {
+      "id": 18,
+      "topic": "css-selectors",
+      "question": "What does '>' mean in CSS?",
+      "correctAnswer": "Direct child selector",
+      "choices": [
+        "Direct child selector",
+        "General sibling",
+        "Adjacent sibling",
+        "Descendant selector"
+      ]
+    },
+    {
+      "id": 19,
+      "topic": "css-selectors",
+      "question": "How to select all elements with class 'active'?",
+      "correctAnswer": ".active",
+      "choices": [".active", "#active", "active", "[active]"]
+    },
+
+    {
+      "id": 21,
+      "topic": "css-fonts",
+      "question": "Which property sets font family?",
+      "correctAnswer": "font-family",
+      "choices": ["font-family", "font-type", "text-family", "typeface"]
+    },
+    {
+      "id": 22,
+      "topic": "css-fonts",
+      "question": "What does 'font-weight: bold' do?",
+      "correctAnswer": "Makes text bold",
+      "choices": [
+        "Makes text bold",
+        "Increases font size",
+        "Adds shadow",
+        "Changes font family"
+      ]
+    },
+    {
+      "id": 23,
+      "topic": "css-fonts",
+      "question": "Which value makes text italic?",
+      "correctAnswer": "font-style: italic",
+      "choices": [
+        "font-style: italic",
+        "font-weight: italic",
+        "text-style: italic",
+        "style: italic"
+      ]
+    },
+    {
+      "id": 24,
+      "topic": "css-fonts",
+      "question": "What is the default font size in most browsers?",
+      "correctAnswer": "16px",
+      "choices": ["16px", "14px", "12px", "18px"]
+    },
+    {
+      "id": 25,
+      "topic": "css-fonts",
+      "question": "Which unit is relative to root font size?",
+      "correctAnswer": "rem",
+      "choices": ["rem", "em", "px", "vw"]
+    },
+
+    {
+      "id": 26,
+      "topic": "css-text",
+      "question": "How to center align text?",
+      "correctAnswer": "text-align: center",
+      "choices": [
+        "text-align: center",
+        "align: center",
+        "text-center: true",
+        "center-text: yes"
+      ]
+    },
+    {
+      "id": 27,
+      "topic": "css-text",
+      "question": "Which property adds space between letters?",
+      "correctAnswer": "letter-spacing",
+      "choices": ["letter-spacing", "word-spacing", "text-spacing", "character-spacing"]
+    },
+    {
+      "id": 28,
+      "topic": "css-text",
+      "question": "What does 'text-transform: uppercase' do?",
+      "correctAnswer": "Converts text to uppercase",
+      "choices": [
+        "Converts text to uppercase",
+        "Increases font size",
+        "Makes text bold",
+        "Changes font"
+      ]
+    },
+    {
+      "id": 29,
+      "topic": "css-text",
+      "question": "Which property adds line under text?",
+      "correctAnswer": "text-decoration",
+      "choices": ["text-decoration", "text-underline", "underline", "line-style"]
+    },
+    {
+      "id": 30,
+      "topic": "css-text",
+      "question": "How to make text wrap?",
+      "correctAnswer": "white-space: normal",
+      "choices": [
+        "white-space: normal",
+        "text-wrap: wrap",
+        "wrap-text: true",
+        "overflow-wrap: break-word"
+      ]
+    },
+
+    {
+      "id": 31,
+      "topic": "js-control-flow",
+      "question": "Which loop executes at least once?",
+      "correctAnswer": "do...while",
+      "choices": ["do...while", "while", "for", "forEach"]
+    },
+    {
+      "id": 32,
+      "topic": "js-control-flow",
+      "question": "What is the result of: if (0) { console.log('true') }?",
+      "correctAnswer": "Nothing logs",
+      "choices": [
+        "Nothing logs",
+        "'true' logs",
+        "Error",
+        "undefined logs"
+      ]
+    },
+    {
+      "id": 33,
+      "topic": "js-control-flow",
+      "question": "Which is NOT a falsy value in JavaScript?",
+      "correctAnswer": "[] (empty array)",
+      "choices": ["[] (empty array)", "0", "''", "null"]
+    },
+    {
+      "id": 34,
+      "topic": "js-control-flow",
+      "question": "What does 'break' do in a loop?",
+      "correctAnswer": "Exits the loop immediately",
+      "choices": [
+        "Exits the loop immediately",
+        "Skips current iteration",
+        "Restarts loop",
+        "Pauses loop"
+      ]
+    },
+    {
+      "id": 35,
+      "topic": "js-control-flow",
+      "question": "Which operator checks both value AND type?",
+      "correctAnswer": "===",
+      "choices": ["===", "==", "=", "!=="]
+    },
+
+    {
+      "id": 36,
+      "topic": "js-functions",
+      "question": "What is a callback function?",
+      "correctAnswer": "Function passed as argument",
+      "choices": [
+        "Function passed as argument",
+        "Function that calls itself",
+        "Error handling function",
+        "Anonymous function"
+      ]
+    },
+    {
+      "id": 37,
+      "topic": "js-functions",
+      "question": "Which creates an arrow function?",
+      "correctAnswer": "const fn = () => {}",
+      "choices": [
+        "const fn = () => {}",
+        "function fn() {}",
+        "fn() => {}",
+        "arrow function fn() {}"
+      ]
+    },
+    {
+      "id": 38,
+      "topic": "js-functions",
+      "question": "What does 'return' do in a function?",
+      "correctAnswer": "Returns value and stops execution",
+      "choices": [
+        "Returns value and stops execution",
+        "Continues execution",
+        "Logs value to console",
+        "Throws error"
+      ]
+    },
+    {
+      "id": 39,
+      "topic": "js-functions",
+      "question": "What is function scope?",
+      "correctAnswer": "Variables accessible within function",
+      "choices": [
+        "Variables accessible within function",
+        "Global variables",
+        "Block-scoped variables",
+        "Module scope"
+      ]
+    },
+    {
+      "id": 40,
+      "topic": "js-functions",
+      "question": "Which is NOT a way to define a function?",
+      "correctAnswer": "def function() {}",
+      "choices": [
+        "def function() {}",
+        "function name() {}",
+        "const name = function() {}",
+        "() => {}"
+      ]
+    },
+
+    {
+      "id": 41,
+      "topic": "js-objects",
+      "question": "How to access object property 'name'?",
+      "correctAnswer": "obj.name or obj['name']",
+      "choices": [
+        "obj.name or obj['name']",
+        "obj->name",
+        "obj::name",
+        "obj.get('name')"
+      ]
+    },
+    {
+      "id": 42,
+      "topic": "js-objects",
+      "question": "What does 'this' refer to in an object method?",
+      "correctAnswer": "The object itself",
+      "choices": [
+        "The object itself",
+        "Global window",
+        "Parent object",
+        "Method parameters"
+      ]
+    },
+    {
+      "id": 43,
+      "topic": "js-objects",
+      "question": "How to add property to object?",
+      "correctAnswer": "obj.newProp = value",
+      "choices": [
+        "obj.newProp = value",
+        "obj.add('newProp', value)",
+        "obj.insert('newProp', value)",
+        "obj['newProp'].set(value)"
+      ]
+    },
+    {
+      "id": 44,
+      "topic": "js-objects",
+      "question": "What is object destructuring?",
+      "correctAnswer": "Unpacking values into variables",
+      "choices": [
+        "Unpacking values into variables",
+        "Deleting object properties",
+        "Converting to array",
+        "Merging objects"
+      ]
+    },
+    {
+      "id": 45,
+      "topic": "js-objects",
+      "question": "Which method creates object copy?",
+      "correctAnswer": "Object.assign({}, obj)",
+      "choices": [
+        "Object.assign({}, obj)",
+        "obj.copy()",
+        "JSON.stringify(obj)",
+        "obj.clone()"
+      ]
+    },
+
+    {
+      "id": 46,
+      "topic": "js-types",
+      "question": "What is typeof null?",
+      "correctAnswer": "object",
+      "choices": ["object", "null", "undefined", "number"]
+    },
+    {
+      "id": 47,
+      "topic": "js-types",
+      "question": "Which is primitive type?",
+      "correctAnswer": "string",
+      "choices": ["string", "array", "object", "function"]
+    },
+    {
+      "id": 48,
+      "topic": "js-types",
+      "question": "What does Number('123') return?",
+      "correctAnswer": "123 (number)",
+      "choices": [
+        "123 (number)",
+        "'123' (string)",
+        "NaN",
+        "Error"
+      ]
+    },
+    {
+      "id": 49,
+      "topic": "js-types",
+      "question": "What is truthy value?",
+      "correctAnswer": "Value that converts to true",
+      "choices": [
+        "Value that converts to true",
+        "Value equal to true",
+        "Boolean true only",
+        "Any number"
+      ]
+    },
+    {
+      "id": 50,
+      "topic": "js-types",
+      "question": "What does !!'' evaluate to?",
+      "correctAnswer": "false",
+      "choices": ["false", "true", "''", "undefined"]
+    },
+    {
+      "id": 51,
+      "topic": "javascript-intro",
+      "question": "What does 'let' do in JavaScript?",
+      "correctAnswer": "Declares a block-scoped variable",
+      "choices": [
+        "Declares a block-scoped variable",
+        "Creates a constant value",
+        "Imports a module",
+        "Declares a function"
+      ]
+    },
+    {
+      "id": 52,
+      "topic": "javascript-intro",
+      "question": "Which symbol is used for single-line comments in JavaScript?",
+      "correctAnswer": "//",
+      "choices": ["/*", "//", "#", "--"]
+    },
+    {
+      "id": 53,
+      "topic": "javascript-intro",
+      "question": "What is the result of: console.log(typeof null)?",
+      "correctAnswer": "object",
+      "choices": ["null", "object", "undefined", "string"]
+    },
+    {
+      "id": 54,
+      "topic": "javascript-intro",
+      "question": "Which method adds elements to the end of an array?",
+      "correctAnswer": "push()",
+      "choices": ["push()", "pop()", "shift()", "unshift()"]
+    },
+    {
+      "id": 55,
+      "topic": "javascript-intro",
+      "question": "What does === mean in JavaScript?",
+      "correctAnswer": "Strict equality (type and value)",
+      "choices": [
+        "Strict equality (type and value)",
+        "Assignment operator",
+        "Loose equality (value only)",
+        "Not equal"
+      ]
+    },
+    {
+      "id": 56,
+      "topic": "html-basics",
+      "question": "What does HTML stand for?",
+      "correctAnswer": "HyperText Markup Language",
+      "choices": [
+        "HyperText Markup Language",
+        "HyperTool Markup Language",
+        "HomeTool Markup Language",
+        "HyperText Machine Language"
+      ]
+    },
+    {
+      "id": 57,
+      "topic": "html-basics",
+      "question": "Which tag is used for the largest heading?",
+      "correctAnswer": "<h1>",
+      "choices": ["<h6>", "<h1>", "<head>", "<header>"]
+    },
+    {
+      "id": 58,
+      "topic": "html-basics",
+      "question": "Which tag creates a line break?",
+      "correctAnswer": "<br>",
+      "choices": ["<break>", "<br>", "<lb>", "<line>"]
+    },
+    {
+      "id": 59,
+      "topic": "html-basics",
+      "question": "What is the correct HTML for creating a hyperlink?",
+      "correctAnswer": "<a href='url'>link</a>",
+      "choices": [
+        "<a href='url'>link</a>",
+        "<link>url</link>",
+        "<a>href='url'</a>",
+        "<hyperlink>url</hyperlink>"
+      ]
+    },
+    {
+      "id": 60,
+      "topic": "html-basics",
+      "question": "Which attribute specifies an image source?",
+      "correctAnswer": "src",
+      "choices": ["src", "href", "link", "source"]
+    },
+    {
+      "id": 61,
+      "topic": "css-fundamentals",
+      "question": "What does CSS stand for?",
+      "correctAnswer": "Cascading Style Sheets",
+      "choices": [
+        "Cascading Style Sheets",
+        "Creative Style System",
+        "Computer Style Sheets",
+        "Colorful Style Sheets"
+      ]
+    },
+    {
+      "id": 62,
+      "topic": "css-fundamentals",
+      "question": "Which property is used to change text color?",
+      "correctAnswer": "color",
+      "choices": ["text-color", "font-color", "color", "background-color"]
+    },
+    {
+      "id": 63,
+      "topic": "css-fundamentals",
+      "question": "How do you select an element with id 'header'?",
+      "correctAnswer": "#header",
+      "choices": [".header", "#header", "header", "*header"]
+    },
+    {
+      "id": 64,
+      "topic": "css-fundamentals",
+      "question": "Which property controls element spacing outside borders?",
+      "correctAnswer": "margin",
+      "choices": ["padding", "margin", "border", "spacing"]
+    },
+    {
+      "id": 15,
+      "topic": "css-fundamentals",
+      "question": "What does 'em' unit represent?",
+      "correctAnswer": "Relative to font-size of element",
+      "choices": [
+        "Relative to font-size of element",
+        "Equal to 16 pixels",
+        "Absolute measurement",
+        "Equal to 10 pixels"
+      ]
     }
+    
   ]
 }
