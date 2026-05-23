@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     summarySection.hidden = true;
 
     // Fetch ALL flashcards, then filter by topic
-    fetch("http://localhost:3000/flashcards")
+    fetch("db.json")
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
         return res.json();
