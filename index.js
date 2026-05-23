@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
         return res.json();
       })
-      .then(allFlashcards => {
+      .then(data => {
+        const allFlashcards = data.flashcards;
         // Filter flashcards by the selected topic
         questions = allFlashcards.filter(card => card.topic === topic);
         
