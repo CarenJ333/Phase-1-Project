@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   if (isCorrect) {
     selectedBtn.classList.add("correct");
-    feedback.textContent = "✨ Correct! Well done!";
+    feedback.textContent = "Correct! Well done!";
     feedback.style.background = "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)";
     feedback.style.color = "#155724";
     score++;
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
   } else {
     selectedBtn.classList.add("wrong");
-    feedback.textContent = `💡 The correct answer is: ${correctAnswer}`;
+    feedback.textContent = `The correct answer is: ${correctAnswer}`;
     feedback.style.background = "linear-gradient(135deg, #ff6b6b 0%, #ffa8a8 100%)";
     feedback.style.color = "#721c24";
     
@@ -247,19 +247,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const performanceText = document.getElementById('performance-text');
   
   if (percentage >= 90) {
-    performanceTitle.textContent = "Perfect Score! 🎯";
+    performanceTitle.textContent = "Perfect Score!";
     performanceText.textContent = "Outstanding! You've mastered this topic completely!";
   } else if (percentage >= 80) {
-    performanceTitle.textContent = "Excellent Work! 🌟";
+    performanceTitle.textContent = "Excellent Work!";
     performanceText.textContent = "You have a strong understanding of this material!";
   } else if (percentage >= 70) {
-    performanceTitle.textContent = "Great Job! 👍";
+    performanceTitle.textContent = "Great Job!";
     performanceText.textContent = "Good progress! Keep up the practice!";
   } else if (percentage >= 60) {
-    performanceTitle.textContent = "Good Effort! 💪";
+    performanceTitle.textContent = "Good Effort!";
     performanceText.textContent = "You're getting there! Review and try again!";
   } else {
-    performanceTitle.textContent = "Keep Practicing! 📚";
+    performanceTitle.textContent = "Keep Practicing!";
     performanceText.textContent = "Don't give up! Review the material and try again!";
   }
   
@@ -312,7 +312,7 @@ document.getElementById("restart-btn").addEventListener("click", () => {
 // Share button functionality (optional)
 document.getElementById('share-btn').addEventListener('click', () => {
   const percentage = Math.round((score / questions.length) * 100);
-  const shareText = `🎯 I scored ${score}/${questions.length} (${percentage}%) on the flashcard quiz! Try it yourself!`;
+  const shareText = ` I scored ${score}/${questions.length} (${percentage}%) on the flashcard quiz! Try it yourself!`;
   
   if (navigator.share) {
     navigator.share({
